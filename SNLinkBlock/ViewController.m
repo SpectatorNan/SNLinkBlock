@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UILabel+Link.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.labFont([UIFont systemFontOfSize:30]).labText(@"懒惰的小蜜蜂").labTextColor([UIColor redColor]).labFrame(CGRectMake(100, 100, 200, 50));
+    
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {

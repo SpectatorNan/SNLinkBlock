@@ -15,6 +15,16 @@
 		7450D7261CFAD17000A74DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7450D7241CFAD17000A74DA2 /* LaunchScreen.storyboard */; };
 		7450D7311CFAD17000A74DA2 /* SNLinkBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7301CFAD17000A74DA2 /* SNLinkBlockTests.m */; };
 		7450D73C1CFAD17000A74DA2 /* SNLinkBlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D73B1CFAD17000A74DA2 /* SNLinkBlockUITests.m */; };
+		7450D74D1CFAD23D00A74DA2 /* UILabel+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D74C1CFAD23D00A74DA2 /* UILabel+Link.m */; };
+		7450D7511CFAE92F00A74DA2 /* UIButton+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7501CFAE92F00A74DA2 /* UIButton+Link.m */; };
+		7450D7541CFAE95100A74DA2 /* UICollectionView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7531CFAE95100A74DA2 /* UICollectionView+Link.m */; };
+		7450D7571CFAE99600A74DA2 /* UIImageView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7561CFAE99600A74DA2 /* UIImageView+Link.m */; };
+		7450D75A1CFAE9DC00A74DA2 /* UIScrollView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7591CFAE9DC00A74DA2 /* UIScrollView+Link.m */; };
+		7450D75D1CFAE9F900A74DA2 /* UISearchBar+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D75C1CFAE9F900A74DA2 /* UISearchBar+Link.m */; };
+		7450D7601CFAEA2400A74DA2 /* UITableView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D75F1CFAEA2400A74DA2 /* UITableView+Link.m */; };
+		7450D7631CFAEA4800A74DA2 /* UITextField+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7621CFAEA4800A74DA2 /* UITextField+Link.m */; };
+		7450D7661CFAEA6000A74DA2 /* UITextView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7651CFAEA6000A74DA2 /* UITextView+Link.m */; };
+		7450D7691CFAEA8000A74DA2 /* UIView+Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 7450D7681CFAEA8000A74DA2 /* UIView+Link.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,26 @@
 		7450D7371CFAD17000A74DA2 /* SNLinkBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNLinkBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7450D73B1CFAD17000A74DA2 /* SNLinkBlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNLinkBlockUITests.m; sourceTree = "<group>"; };
 		7450D73D1CFAD17000A74DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7450D74B1CFAD23D00A74DA2 /* UILabel+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Link.h"; sourceTree = "<group>"; };
+		7450D74C1CFAD23D00A74DA2 /* UILabel+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Link.m"; sourceTree = "<group>"; };
+		7450D74F1CFAE92F00A74DA2 /* UIButton+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Link.h"; sourceTree = "<group>"; };
+		7450D7501CFAE92F00A74DA2 /* UIButton+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Link.m"; sourceTree = "<group>"; };
+		7450D7521CFAE95100A74DA2 /* UICollectionView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Link.h"; sourceTree = "<group>"; };
+		7450D7531CFAE95100A74DA2 /* UICollectionView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Link.m"; sourceTree = "<group>"; };
+		7450D7551CFAE99600A74DA2 /* UIImageView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Link.h"; sourceTree = "<group>"; };
+		7450D7561CFAE99600A74DA2 /* UIImageView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Link.m"; sourceTree = "<group>"; };
+		7450D7581CFAE9DC00A74DA2 /* UIScrollView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Link.h"; sourceTree = "<group>"; };
+		7450D7591CFAE9DC00A74DA2 /* UIScrollView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Link.m"; sourceTree = "<group>"; };
+		7450D75B1CFAE9F900A74DA2 /* UISearchBar+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Link.h"; sourceTree = "<group>"; };
+		7450D75C1CFAE9F900A74DA2 /* UISearchBar+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Link.m"; sourceTree = "<group>"; };
+		7450D75E1CFAEA2400A74DA2 /* UITableView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Link.h"; sourceTree = "<group>"; };
+		7450D75F1CFAEA2400A74DA2 /* UITableView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Link.m"; sourceTree = "<group>"; };
+		7450D7611CFAEA4800A74DA2 /* UITextField+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Link.h"; sourceTree = "<group>"; };
+		7450D7621CFAEA4800A74DA2 /* UITextField+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Link.m"; sourceTree = "<group>"; };
+		7450D7641CFAEA6000A74DA2 /* UITextView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Link.h"; sourceTree = "<group>"; };
+		7450D7651CFAEA6000A74DA2 /* UITextView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Link.m"; sourceTree = "<group>"; };
+		7450D7671CFAEA8000A74DA2 /* UIView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Link.h"; sourceTree = "<group>"; };
+		7450D7681CFAEA8000A74DA2 /* UIView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Link.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +131,7 @@
 		7450D7151CFAD17000A74DA2 /* SNLinkBlock */ = {
 			isa = PBXGroup;
 			children = (
+				7450D74A1CFAD1F400A74DA2 /* SNLinkBlock */,
 				7450D7191CFAD17000A74DA2 /* AppDelegate.h */,
 				7450D71A1CFAD17000A74DA2 /* AppDelegate.m */,
 				7450D71C1CFAD17000A74DA2 /* ViewController.h */,
@@ -138,6 +169,33 @@
 				7450D73D1CFAD17000A74DA2 /* Info.plist */,
 			);
 			path = SNLinkBlockUITests;
+			sourceTree = "<group>";
+		};
+		7450D74A1CFAD1F400A74DA2 /* SNLinkBlock */ = {
+			isa = PBXGroup;
+			children = (
+				7450D74B1CFAD23D00A74DA2 /* UILabel+Link.h */,
+				7450D74C1CFAD23D00A74DA2 /* UILabel+Link.m */,
+				7450D74F1CFAE92F00A74DA2 /* UIButton+Link.h */,
+				7450D7501CFAE92F00A74DA2 /* UIButton+Link.m */,
+				7450D7521CFAE95100A74DA2 /* UICollectionView+Link.h */,
+				7450D7531CFAE95100A74DA2 /* UICollectionView+Link.m */,
+				7450D7551CFAE99600A74DA2 /* UIImageView+Link.h */,
+				7450D7561CFAE99600A74DA2 /* UIImageView+Link.m */,
+				7450D7581CFAE9DC00A74DA2 /* UIScrollView+Link.h */,
+				7450D7591CFAE9DC00A74DA2 /* UIScrollView+Link.m */,
+				7450D75B1CFAE9F900A74DA2 /* UISearchBar+Link.h */,
+				7450D75C1CFAE9F900A74DA2 /* UISearchBar+Link.m */,
+				7450D75E1CFAEA2400A74DA2 /* UITableView+Link.h */,
+				7450D75F1CFAEA2400A74DA2 /* UITableView+Link.m */,
+				7450D7611CFAEA4800A74DA2 /* UITextField+Link.h */,
+				7450D7621CFAEA4800A74DA2 /* UITextField+Link.m */,
+				7450D7641CFAEA6000A74DA2 /* UITextView+Link.h */,
+				7450D7651CFAEA6000A74DA2 /* UITextView+Link.m */,
+				7450D7671CFAEA8000A74DA2 /* UIView+Link.h */,
+				7450D7681CFAEA8000A74DA2 /* UIView+Link.m */,
+			);
+			path = SNLinkBlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +328,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7450D74D1CFAD23D00A74DA2 /* UILabel+Link.m in Sources */,
 				7450D71E1CFAD17000A74DA2 /* ViewController.m in Sources */,
+				7450D7511CFAE92F00A74DA2 /* UIButton+Link.m in Sources */,
+				7450D7601CFAEA2400A74DA2 /* UITableView+Link.m in Sources */,
 				7450D71B1CFAD17000A74DA2 /* AppDelegate.m in Sources */,
+				7450D7541CFAE95100A74DA2 /* UICollectionView+Link.m in Sources */,
 				7450D7181CFAD17000A74DA2 /* main.m in Sources */,
+				7450D7661CFAEA6000A74DA2 /* UITextView+Link.m in Sources */,
+				7450D7631CFAEA4800A74DA2 /* UITextField+Link.m in Sources */,
+				7450D7571CFAE99600A74DA2 /* UIImageView+Link.m in Sources */,
+				7450D75D1CFAE9F900A74DA2 /* UISearchBar+Link.m in Sources */,
+				7450D7691CFAEA8000A74DA2 /* UIView+Link.m in Sources */,
+				7450D75A1CFAE9DC00A74DA2 /* UIScrollView+Link.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SNLinkBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sepctatornan.SNLinkBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SNLinkBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sepctatornan.SNLinkBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +568,7 @@
 				7450D7421CFAD17000A74DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7450D7431CFAD17000A74DA2 /* Build configuration list for PBXNativeTarget "SNLinkBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +577,7 @@
 				7450D7451CFAD17000A74DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7450D7461CFAD17000A74DA2 /* Build configuration list for PBXNativeTarget "SNLinkBlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +586,7 @@
 				7450D7481CFAD17000A74DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

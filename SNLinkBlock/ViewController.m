@@ -20,8 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UILabel *label = [[UILabel alloc] init];
-    label.labFont([UIFont systemFontOfSize:30]).labText(@"懒惰的小蜜蜂").labTextColor([UIColor redColor]).labFrame(CGRectMake(100, 100, 200, 50));
-    
+    label.labFont([UIFont systemFontOfSize:30]).labText(@"懒惰的小蜜蜂").labTextColor([UIColor redColor]).labX(100).labY(100).labHeight(50).labWidth(200);
     [self.view addSubview:label];
 }
 

@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Link)
+/**
+ *  设置背景颜色
+ */
+@property (nonatomic, copy, readonly) UIView *(^viewBackgroundColor)(UIColor *color);
+
 
 @end

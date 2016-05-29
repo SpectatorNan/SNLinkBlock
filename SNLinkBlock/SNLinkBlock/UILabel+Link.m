@@ -20,8 +20,6 @@
         return self;
     };
 }
-- (void)setLabNumberOfLines:(UILabel *(^)(NSInteger))labNumberOfLines {}
-
 
 
 
@@ -32,7 +30,6 @@
         return self;
     };
 }
-- (void)setLabText:(UILabel *(^)(NSString *))labText {};
 
 
 
@@ -44,7 +41,6 @@
         return self;
     };
 }
-- (void)setLabFont:(UILabel *(^)(UIFont *))LabFont {}
 
 
 
@@ -57,7 +53,6 @@
     };
 
 }
-- (void)setLabTextColor:(UILabel *(^)(UIColor *))labTextColor {}
 
 
 
@@ -69,7 +64,6 @@
         return self;
     };
 }
-- (void)setLabTextAlignment:(UILabel *(^)(NSTextAlignment))labTextAlignment {}
 
 
 
@@ -81,7 +75,6 @@
         return self;
     };
 }
-- (void)setLabBackgroundColor:(UILabel *(^)(UIColor *))labBackgroundColor {}
 
 
 
@@ -94,7 +87,6 @@
         return self;
     };
 }
-- (void)setLabFrame:(UILabel *(^)(CGRect))labFrame {}
 
 
 
@@ -108,7 +100,6 @@
         return self;
     };
 }
-- (void)setLabX:(UILabel *(^)(CGFloat))labX {}
 
 
 
@@ -117,10 +108,12 @@
 - (UILabel *(^)(CGFloat))labY {
     
     return ^(CGFloat y) {
+        CGRect frame = self.frame;
+        frame.origin.y = y;
+        self.frame = frame;
         return self;
     };
 }
-- (void)setLabY:(UILabel *(^)(CGFloat))labY {}
 
 
 
@@ -128,10 +121,13 @@
 - (UILabel *(^)(CGFloat))labWidth {
     
     return ^(CGFloat width) {
+        CGRect frame = self.frame;
+        frame.size.width = width;
+        self.frame = frame;
+        
         return self;
     };
 }
-- (void)setLabWidth:(UILabel *(^)(CGFloat))labWidth {}
 
 
 
@@ -139,8 +135,10 @@
 - (UILabel *(^)(CGFloat))labHeight {
     
     return ^(CGFloat height) {
+        CGRect frame = self.frame;
+        frame.size.height = height;
+        self.frame = frame;
         return self;
     };
 }
-- (void)setLabHeight:(UILabel *(^)(CGFloat))labHeight {}
 @end

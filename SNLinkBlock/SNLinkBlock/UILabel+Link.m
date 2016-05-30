@@ -11,7 +11,7 @@
 @implementation UILabel (Link)
 
 
-- (UILabel *(^)(NSInteger))labNumberOfLines {
+- (UILabel *(^)(NSInteger))lab_numberOfLines {
     
     return ^(NSInteger lines) {
         
@@ -23,7 +23,7 @@
 
 
 
-- (UILabel *(^)(NSString *))labText {
+- (UILabel *(^)(NSString *))lab_text {
     
     return ^(NSString *text) {
         self.text = text;
@@ -34,7 +34,7 @@
 
 
 
-- (UILabel *(^)(UIFont *))labFont {
+- (UILabel *(^)(UIFont *))lab_font {
     
     return ^(UIFont *font) {
         self.font = font;
@@ -45,7 +45,7 @@
 
 
 
-- (UILabel *(^)(UIColor *))labTextColor {
+- (UILabel *(^)(UIColor *))lab_textColor {
     
     return ^(UIColor *textColor) {
         self.textColor = textColor;
@@ -57,7 +57,7 @@
 
 
 
-- (UILabel *(^)(NSTextAlignment))labTextAlignment {
+- (UILabel *(^)(NSTextAlignment))lab_textAlignment {
     
     return ^(NSTextAlignment textAlignment) {
         self.textAlignment = textAlignment;
@@ -68,7 +68,7 @@
 
 
 
-- (UILabel *(^)(UIColor *))labBackgroundColor {
+- (UILabel *(^)(UIColor *))lab_backgroundColor {
     
     return ^(UIColor *backgroundColor) {
         self.backgroundColor = backgroundColor;
@@ -79,7 +79,7 @@
 
 
 
-- (UILabel *(^)(CGRect))labFrame {
+- (UILabel *(^)(CGRect))lab_frame {
     
     return ^(CGRect frame){
         self.frame = frame;
@@ -91,7 +91,7 @@
 
 
 
-- (UILabel *(^)(CGFloat))labX {
+- (UILabel *(^)(CGFloat))lab_x {
     
     return ^(CGFloat x){
         CGRect frame = self.frame;
@@ -105,7 +105,7 @@
 
 
 
-- (UILabel *(^)(CGFloat))labY {
+- (UILabel *(^)(CGFloat))lab_y {
     
     return ^(CGFloat y) {
         CGRect frame = self.frame;
@@ -118,7 +118,7 @@
 
 
 
-- (UILabel *(^)(CGFloat))labWidth {
+- (UILabel *(^)(CGFloat))lab_width {
     
     return ^(CGFloat width) {
         CGRect frame = self.frame;
@@ -131,8 +131,7 @@
 
 
 
-
-- (UILabel *(^)(CGFloat))labHeight {
+- (UILabel *(^)(CGFloat))lab_height {
     
     return ^(CGFloat height) {
         CGRect frame = self.frame;

@@ -15,4 +15,9 @@
 @property (nonatomic, copy, readonly) UIView *(^view_backgroundColor)(UIColor *color);
 
 
+/**
+ *  同时添加多个子视图
+ *
+ */
+- (void)sn_addSubviews:(NSArray *)views;
 @end

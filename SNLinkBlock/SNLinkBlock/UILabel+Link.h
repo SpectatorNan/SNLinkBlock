@@ -18,6 +18,10 @@
  */
 @property (nonatomic, copy, readonly) UILabel *(^lab_font)(UIFont *font);
 /**
+ *  设置 字体是否自适应View
+ */
+@property (nonatomic, copy, readonly) UILabel *(^lab_adjustsFontSizeToFitWidth)(BOOL adjust);
+/**
  *  设置文本
  */
 @property (nonatomic, copy, readonly) UILabel *(^lab_text)(NSString *text);
@@ -25,6 +29,10 @@
  *  设置文本颜色
  */
 @property (nonatomic, copy, readonly) UILabel *(^lab_textColor)(UIColor *textcolor);
+/**
+ *  设置 多余文本的截断方式
+ */
+@property (nonatomic, copy, readonly) UILabel *(^lab_lineBreakMode)(NSLineBreakMode mode);
 /**
  *  设置对齐
  */

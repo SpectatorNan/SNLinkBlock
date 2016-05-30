@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (Link)
+/**
+ *  设置 backgroundColor
+ */
+@property (nonatomic, copy, readonly) UIImageView *(^imgV_backgroundColor)(UIColor *color);
+/**
+ *  设置 image
+ */
+@property (nonatomic, copy, readonly) UIImageView *(^imgV_image)(UIImage *image);
 
 @end

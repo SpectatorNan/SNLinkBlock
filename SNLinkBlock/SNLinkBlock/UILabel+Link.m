@@ -43,7 +43,15 @@
 }
 
 
-
+- (UILabel *(^)(BOOL))lab_adjustsFontSizeToFitWidth {
+    
+    return ^(BOOL adjust) {
+        
+        self.adjustsFontSizeToFitWidth = adjust;
+        
+        return self;
+    };
+}
 
 - (UILabel *(^)(UIColor *))lab_textColor {
     
@@ -55,7 +63,15 @@
 }
 
 
-
+- (UILabel *(^)(NSLineBreakMode))lab_lineBreakMode {
+    
+    return ^(NSLineBreakMode mode) {
+        
+        self.lineBreakMode = mode;
+        
+        return self;
+    };
+}
 
 - (UILabel *(^)(NSTextAlignment))lab_textAlignment {
     

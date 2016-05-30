@@ -20,4 +20,12 @@
     };
 }
 
+- (void)sn_addSubviews:(NSArray *)views {
+ 
+    [views enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([view isKindOfClass:[UIView class]] ) {
+            [self addSubview:view];
+        }
+    }];
+}
 @end

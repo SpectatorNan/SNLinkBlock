@@ -12,7 +12,7 @@
 /**
  *  设置背景颜色
  */
-@property (nonatomic, copy, readonly) UIView *(^viewBackgroundColor)(UIColor *color);
+@property (nonatomic, copy, readonly) UIView *(^view_backgroundColor)(UIColor *color);
 
 
 @end

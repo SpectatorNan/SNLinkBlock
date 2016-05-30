@@ -24,7 +24,7 @@
     label.lab_font([UIFont systemFontOfSize:30]).lab_text(@"懒惰的小蜜蜂").lab_textColor([UIColor redColor]).lab_x(100).lab_y(100).lab_height(50).lab_width(200);
     [self.view addSubview:label];
     
-    UIButton *button = [UIButton new];
+
     
 }
 

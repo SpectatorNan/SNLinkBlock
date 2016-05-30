@@ -10,4 +10,14 @@
 
 @implementation UIView (Link)
 
+- (UIView *(^)(UIColor *))view_backgroundColor {
+    
+    return ^(UIColor *color) {
+        
+        self.backgroundColor = color;
+        
+        return self;
+    };
+}
+
 @end

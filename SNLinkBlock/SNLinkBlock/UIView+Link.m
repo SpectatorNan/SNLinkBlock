@@ -15,7 +15,6 @@
     return ^(UIColor *color) {
         
         self.backgroundColor = color;
-        
         return self;
     };
 }

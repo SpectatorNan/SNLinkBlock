@@ -10,22 +10,20 @@
 
 @implementation UIImageView (Link)
 
-- (UIImageView *(^)(UIColor *))imgV_backgroundColor {
-    
-    return ^(UIColor *color) {
-        
-        self.backgroundColor = color;
-        
-        return self;
-    };
-}
-
 
 - (UIImageView *(^)(UIImage *))imgV_image {
     
     return ^(UIImage *sn_image) {
         
         self.image = sn_image;
+        
+        return self;
+    };
+}
+- (UIImageView *(^)(UIImage *))imgV_highlightedImage{
+    return ^(UIImage *highlightedImage) {
+        
+        self.highlightedImage = highlightedImage;
         
         return self;
     };

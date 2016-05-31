@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "SNLinkBlock.h"
-
+//#import "UIView+Link.h"
+//#import "UILabel+Link.h"
 @interface ViewController ()
 
 @end
@@ -19,9 +20,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *label = [[UILabel alloc] init];
-    label.lab_font([UIFont systemFontOfSize:30]).lab_text(@"懒惰的小蜜蜂").lab_textColor([UIColor redColor]).lab_x(100).lab_y(100).lab_height(50).lab_width(200);
-    [self.view addSubview:label];
+    UIView* test = [UIView new]
+    .view_backgroundColor([UIColor redColor]);
+    
+    
+    UILabel* tst = (UILabel*)[UILabel new]
+    .lab_numberOfLines(1)
+    .lab_text(@"1234")
+    .view_frame(CGRectMake(0, 0, 100, 100))
+    .view_x(100);
+    
+//    test.view_width(100).
+    [self.view addSubview:test];
+    [self.view addSubview:tst];
+    
+    
+    
+//    tst
+//    .lab_font([UIFont systemFontOfSize:15])).view_backgroundColor([UIColor redColor]);
+    
+//    [self.view addSubview:test];
     
 
     

@@ -20,7 +20,7 @@
 /**
  *  设置 字体是否自适应View
  */
-@property (nonatomic, copy, readonly) UILabel *(^lab_adjustsFontSizeToFitWidth)(BOOL adjust);
+@property (nonatomic, copy, readonly) UILabel *(^lab_adjustsFontSizeToFitWidth)(BOOL adjustsFontSizeToFitWidth);
 /**
  *  设置文本
  */
@@ -37,29 +37,28 @@
  *  设置对齐
  */
 @property (nonatomic, copy, readonly) UILabel *(^lab_textAlignment)(NSTextAlignment textAlignment);
-/**
- *  设置背景颜色
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_backgroundColor)(UIColor *backgroundColor);
-/**
- *  设置frame
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_frame)(CGRect frame);
-/**
- *  设置x
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_x)(CGFloat x);
-/**
- *  设置y
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_y)(CGFloat y);
-/**
- *  设置width
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_width)(CGFloat width);
-/**
- *  设置height
- */
-@property (nonatomic, copy, readonly) UILabel *(^lab_height)(CGFloat height);
 
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_shadowColor)(UIColor *shadowColor);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_shadowOffset)(CGSize shadowOffset);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_attributedText)(NSAttributedString *attributedText);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_highlightedTextColor)(UIColor *highlightedTextColor);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_userInteractionEnabled)(BOOL userInteractionEnabled);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_enabled)(BOOL enabled);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_baselineAdjustment)(UIBaselineAdjustment baselineAdjustment);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_minimumScaleFactor)(CGFloat minimumScaleFactor);
+@property (nonatomic, copy, readonly) UILabel *(^lab_allowsDefaultTighteningForTruncation)(BOOL allowsDefaultTighteningForTruncation);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_preferredMaxLayoutWidth)(CGFloat preferredMaxLayoutWidth);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_minimumFontSize)(CGFloat minimumFontSize)NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED;
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_adjustsLetterSpacingToFitWidth)(BOOL adjustsLetterSpacingToFitWidth) NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
 @end

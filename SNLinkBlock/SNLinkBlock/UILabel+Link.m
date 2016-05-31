@@ -45,9 +45,9 @@
 
 - (UILabel *(^)(BOOL))lab_adjustsFontSizeToFitWidth {
     
-    return ^(BOOL adjust) {
+    return ^(BOOL adjustsFontSizeToFitWidth) {
         
-        self.adjustsFontSizeToFitWidth = adjust;
+        self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth;
         
         return self;
     };
@@ -81,78 +81,85 @@
     };
 }
 
-
-
-
-- (UILabel *(^)(UIColor *))lab_backgroundColor {
-    
-    return ^(UIColor *backgroundColor) {
-        self.backgroundColor = backgroundColor;
+- (UILabel *(^)(UIColor *))lab_shadowColor{
+    return ^(UIColor *shadowColor){
+        self.shadowColor = shadowColor;
         return self;
     };
 }
 
 
+- (UILabel *(^)(CGSize ))lab_shadowOffset{
+    return ^(CGSize shadowOffset){
+        self.shadowOffset = shadowOffset;
+        return self;
+    };
+}
 
-
-- (UILabel *(^)(CGRect))lab_frame {
-    
-    return ^(CGRect frame){
-        self.frame = frame;
-        
+- (UILabel *(^)(NSAttributedString *))lab_attributedText{
+    return ^(NSAttributedString *attributedText){
+        self.attributedText = attributedText;
         return self;
     };
 }
 
 
-
-
-- (UILabel *(^)(CGFloat))lab_x {
-    
-    return ^(CGFloat x){
-        CGRect frame = self.frame;
-        frame.origin.x = x;
-        self.frame = frame;
+- (UILabel *(^)(UIColor *))lab_highlightedTextColor{
+    return ^(UIColor *highlightedTextColor){
+        self.highlightedTextColor = highlightedTextColor;
         return self;
     };
 }
 
-
-
-
-
-- (UILabel *(^)(CGFloat))lab_y {
-    
-    return ^(CGFloat y) {
-        CGRect frame = self.frame;
-        frame.origin.y = y;
-        self.frame = frame;
+- (UILabel *(^)(BOOL))lab_userInteractionEnabled{
+    return ^(BOOL userInteractionEnabled){
+        self.userInteractionEnabled = userInteractionEnabled;
         return self;
     };
 }
 
-
-
-
-- (UILabel *(^)(CGFloat))lab_width {
-    
-    return ^(CGFloat width) {
-        CGRect frame = self.frame;
-        frame.size.width = width;
-        self.frame = frame;
-        
+- (UILabel *(^)(BOOL))lab_enabled{
+    return ^(BOOL enabled){
+        self.enabled = enabled;
         return self;
     };
 }
 
+- (UILabel *(^)(UIBaselineAdjustment ))lab_baselineAdjustment{
+    return ^(UIBaselineAdjustment baselineAdjustment){
+        self.baselineAdjustment = baselineAdjustment;
+        return self;
+    };
+}
 
+- (UILabel *(^)(CGFloat))lab_minimumScaleFactor{
+    return ^(CGFloat minimumScaleFactor){
+        self.minimumScaleFactor = minimumScaleFactor;
+        return self;
+    };
+}
+- (UILabel *(^)(BOOL))lab_allowsDefaultTighteningForTruncation{
+    return ^(BOOL allowsDefaultTighteningForTruncation){
+        self.allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation;
+        return self;
+    };
+}
+- (UILabel *(^)(CGFloat))lab_preferredMaxLayoutWidth{
+    return ^(CGFloat preferredMaxLayoutWidth){
+        self.preferredMaxLayoutWidth = preferredMaxLayoutWidth;
+        return self;
+    };
+}
 
-- (UILabel *(^)(CGFloat))lab_height {
-    
-    return ^(CGFloat height) {
-        CGRect frame = self.frame;
-        frame.size.height = height;
-        self.frame = frame;
+- (UILabel *(^)(CGFloat))lab_minimumFontSize{
+    return ^(CGFloat minimumFontSize){
+        self.minimumFontSize = minimumFontSize;
+        return self;
+    };
+}
+- (UILabel *(^)(BOOL))lab_adjustsLetterSpacingToFitWidth{
+    return ^(BOOL adjustsLetterSpacingToFitWidth){
+        self.adjustsLetterSpacingToFitWidth = adjustsLetterSpacingToFitWidth;
         return self;
     };
 }

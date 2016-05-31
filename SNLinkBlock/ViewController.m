@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UILabel+Link.h"
-#import "UIButton+Link.h"
+#import "SNLinkBlock.h"
 
 @interface ViewController ()
 

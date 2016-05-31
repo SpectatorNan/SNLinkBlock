@@ -81,6 +81,7 @@
 		7450D7651CFAEA6000A74DA2 /* UITextView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Link.m"; sourceTree = "<group>"; };
 		7450D7671CFAEA8000A74DA2 /* UIView+Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Link.h"; sourceTree = "<group>"; };
 		7450D7681CFAEA8000A74DA2 /* UIView+Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Link.m"; sourceTree = "<group>"; };
+		9D23024C1CFD48F300334BEE /* SNLinkBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLinkBlock.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +195,7 @@
 				7450D7651CFAEA6000A74DA2 /* UITextView+Link.m */,
 				7450D7671CFAEA8000A74DA2 /* UIView+Link.h */,
 				7450D7681CFAEA8000A74DA2 /* UIView+Link.m */,
+				9D23024C1CFD48F300334BEE /* SNLinkBlock.h */,
 			);
 			path = SNLinkBlock;
 			sourceTree = "<group>";

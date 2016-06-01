@@ -55,4 +55,13 @@
  */
 @property (nonatomic, copy, readonly) UIButton *(^button_contentEdgeInsets)(UIEdgeInsets insets);
 
+@property (nonatomic, copy, readonly) UIButton *(^button_backgroundColor)(UIColor *color);
+
+@property (nonatomic, copy, readonly) UIButton *(^button_titleFont)(UIFont *fontSize);
+
+@property (nonatomic, copy, readonly) UIButton *(^button_cornerRadius)(CGFloat cornerRadius);
+
+@property (nonatomic, copy, readonly) UIButton *(^lbutton_borderColor)(CGColorRef borderColor);
+
+@property (nonatomic, copy, readonly) UIButton *(^button_borderWidth)(CGFloat borderWidth);
 @end

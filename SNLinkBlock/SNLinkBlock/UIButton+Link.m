@@ -119,4 +119,54 @@
         return self;
     };
 }
+
+- (UIButton *(^)(UIColor *))button_backgroundColor {
+    
+    return ^(UIColor *color) {
+        self.backgroundColor = color;
+        return self;
+    };
+}
+
+- (UIButton *(^)(UIFont *))button_titleFont {
+    
+    return ^(UIFont *fontSize) {
+        
+        [self.titleLabel setFont:fontSize];
+        
+        return self;
+    };
+}
+
+- (UIButton *(^)(CGFloat))button_cornerRadius {
+    
+    return ^(CGFloat cornerRadius) {
+        
+        self.layer.cornerRadius = cornerRadius;
+        self.clipsToBounds = YES;
+        
+        return self;
+    };
+}
+
+
+- (UIButton *(^)(CGColorRef))lab_borderColor {
+    
+    return ^(CGColorRef borderColor) {
+        
+        self.layer.borderColor = borderColor;
+        
+        return self;
+    };
+}
+
+- (UIButton *(^)(CGFloat))lab_borderWidth {
+    
+    return ^(CGFloat borderWidth) {
+        
+        self.layer.borderWidth = borderWidth;
+        
+        return self;
+    };
+}
 @end

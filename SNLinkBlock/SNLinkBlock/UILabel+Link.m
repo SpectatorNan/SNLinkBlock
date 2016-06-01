@@ -163,4 +163,35 @@
         return self;
     };
 }
+
+- (UILabel *(^)(CGFloat))lab_cornerRadius {
+    
+    return ^(CGFloat cornerRadius) {
+        
+        self.layer.cornerRadius = cornerRadius;
+        self.clipsToBounds = YES;
+        
+        return self;
+    };
+}
+
+- (UILabel *(^)(CGColorRef))lab_borderColor {
+    
+    return ^(CGColorRef borderColor) {
+        
+        self.layer.borderColor = borderColor;
+        
+        return self;
+    };
+}
+
+- (UILabel *(^)(CGFloat))lab_borderWidth {
+    
+    return ^(CGFloat borderWidth) {
+        
+        self.layer.borderWidth = borderWidth;
+        
+        return self;
+    };
+}
 @end

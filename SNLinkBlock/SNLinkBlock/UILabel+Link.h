@@ -38,6 +38,11 @@
  */
 @property (nonatomic, copy, readonly) UILabel *(^lab_textAlignment)(NSTextAlignment textAlignment);
 
+@property (nonatomic, copy, readonly) UILabel *(^lab_cornerRadius)(CGFloat cornerRadius);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_borderColor)(CGColorRef borderColor);
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_borderWidth)(CGFloat borderWidth);
 
 @property (nonatomic, copy, readonly) UILabel *(^lab_shadowColor)(UIColor *shadowColor);
 

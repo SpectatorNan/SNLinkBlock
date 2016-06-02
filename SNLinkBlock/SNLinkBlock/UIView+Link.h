@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (Link)
-
+/**
+ *  设置frame
+ */
 @property (nonatomic, copy, readonly) UIView *(^view_frame)(CGRect frame);
 
 @property (nonatomic, copy, readonly) UIView *(^view_bounds)(CGRect bounds);

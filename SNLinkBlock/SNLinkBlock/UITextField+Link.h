@@ -31,4 +31,6 @@
 
 @property (nonatomic, copy, readonly) UITextField *(^tf_alpha)(CGFloat alpha);
 
+@property (nonatomic, copy, readonly) UITextField *(^tf_secureTextEntry)(BOOL secureTextEntry);
+
 @end

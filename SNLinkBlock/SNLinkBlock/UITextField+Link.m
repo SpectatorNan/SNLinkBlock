@@ -111,4 +111,13 @@
     };
 }
 
+- (UITextField *(^)(BOOL))tf_secureTextEntry {
+    
+    return ^(BOOL secureTextEntry) {
+        
+        self.secureTextEntry = secureTextEntry;
+        
+        return self;
+    };
+}
 @end

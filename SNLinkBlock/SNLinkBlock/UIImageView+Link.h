@@ -15,5 +15,7 @@
  */
 @property (nonatomic, copy, readonly) UIImageView *(^imgV_image)(UIImage *image);
 
-@property (nonatomic, copy, readonly) UIImageView *(^imgV_highlightedImage)(UIImage *highlightedImage);
+@property (nonatomic, copy, readonly) UIImageView *(^imgV_backgroundColor)(UIColor *color);
+
+@property (nonatomic, copy, readonly) UIImageView *(^imgV_circle)(BOOL circle);
 @end

@@ -25,5 +25,8 @@
  *  设置 backgroundColor
  */
 @property (nonatomic, copy, readonly) UITableView *(^table_backgroundColor)(UIColor *color);
-
+/**
+ *  设置 estimatedRowHeight
+ */
+@property (nonatomic, copy, readonly) UITableView *(^table_estimatedRowHeight)(CGFloat estimatedRowHeight);
 @end

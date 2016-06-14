@@ -48,4 +48,14 @@
     };
 }
 
+- (UITableView *(^)(CGFloat))table_estimatedRowHeight {
+    
+    return ^(CGFloat estimatedRowHeight) {
+        
+        self.estimatedRowHeight = estimatedRowHeight;
+        
+        return self;
+    };
+}
+
 @end

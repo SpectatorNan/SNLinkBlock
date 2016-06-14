@@ -20,12 +20,39 @@
         return self;
     };
 }
-- (UIImageView *(^)(UIImage *))imgV_highlightedImage{
-    return ^(UIImage *highlightedImage) {
+
+
+- (UIImageView *(^)(UIColor *))imgV_backgroundColor {
+    
+    return ^(UIColor *color) {
         
-        self.highlightedImage = highlightedImage;
+        self.backgroundColor = color;
         
         return self;
     };
+}
+
+
+- (UIImageView *(^)(BOOL))imgV_circle {
+    
+    return ^(BOOL circle) {
+        
+        if (circle) {
+            [self circleTheView];
+        }
+        
+        return self;
+    };
+}
+
+
+- (void)circleTheView {
+    
+    [self layoutIfNeeded];
+    
+    CGFloat r = MIN(self.frame.size.width, self.frame.size.height);
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, r, r);
+    self.layer.cornerRadius = r / 2;
+    self.clipsToBounds = YES;
 }
 @end

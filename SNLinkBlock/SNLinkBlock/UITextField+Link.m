@@ -120,4 +120,13 @@
         return self;
     };
 }
+
+- (UITextField *(^)(UIFont *))tf_font {
+    
+    return ^(UIFont *fontSize) {
+        
+        self.font = fontSize;
+        return self;
+    };
+}
 @end

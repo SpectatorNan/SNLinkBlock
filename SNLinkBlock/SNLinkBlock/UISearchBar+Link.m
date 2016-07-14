@@ -125,7 +125,15 @@
 
 
 
-
+- (UISearchBar *(^)(UIColor *))searchBar_borderColor {
+    
+    return ^(UIColor *boderColor) {
+        
+        self.layer.borderColor = boderColor.CGColor;
+        
+        return self;
+    };
+}
 
 
 

@@ -28,6 +28,6 @@
 
 @property (nonatomic, copy, readonly) UISearchBar *(^searchBar_cancelTitle)(NSString *title, UIControlState state);
 
-
+@property (nonatomic, copy, readonly) UISearchBar *(^searchBar_borderColor)(UIColor *borderColor);
 @property (nonatomic, copy, readonly) UISearchBar *(^searchBar_showsCancelButton)(BOOL shosCancelButton);
 @end

@@ -10,4 +10,35 @@
 
 @implementation UITextView (Link)
 
+
+- (UITextView *(^)(CGFloat))textV_cornerRadius {
+    
+    return ^(CGFloat cornerRadius) {
+        
+        self.layer.cornerRadius = cornerRadius;
+        self.clipsToBounds = YES;
+        
+        return self;
+    };
+}
+
+
+- (UITextView *(^)(UIColor *))textV_borderColor {
+    return ^(UIColor *borderColor) {
+        
+        self.layer.borderColor = borderColor.CGColor;
+        
+        return self;
+    };
+}
+
+- (UITextView *(^)(CGFloat))textV_borderWidth {
+    
+    return ^(CGFloat borderWidth) {
+        
+        self.layer.borderWidth = borderWidth;
+        
+        return self;
+    };
+}
 @end

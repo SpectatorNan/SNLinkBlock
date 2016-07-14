@@ -33,4 +33,6 @@
 
 @property (nonatomic, copy, readonly) UITextField *(^tf_secureTextEntry)(BOOL secureTextEntry);
 
+@property (nonatomic, copy, readonly) UITextField *(^tf_font)(UIFont *fontSize);
+
 @end

@@ -150,7 +150,7 @@
 }
 
 
-- (UIButton *(^)(CGColorRef))lab_borderColor {
+- (UIButton *(^)(CGColorRef))button_borderColor {
     
     return ^(CGColorRef borderColor) {
         
@@ -160,7 +160,7 @@
     };
 }
 
-- (UIButton *(^)(CGFloat))lab_borderWidth {
+- (UIButton *(^)(CGFloat))button_borderWidth {
     
     return ^(CGFloat borderWidth) {
         

@@ -61,7 +61,7 @@
 
 @property (nonatomic, copy, readonly) UIButton *(^button_cornerRadius)(CGFloat cornerRadius);
 
-@property (nonatomic, copy, readonly) UIButton *(^lbutton_borderColor)(CGColorRef borderColor);
+@property (nonatomic, copy, readonly) UIButton *(^button_borderColor)(CGColorRef borderColor);
 
 @property (nonatomic, copy, readonly) UIButton *(^button_borderWidth)(CGFloat borderWidth);
 @end

@@ -18,7 +18,7 @@
  */
 @property (nonatomic, copy, readonly) UITableView *(^table_delegate)(id obj);
 /**
- *  设置 separatorStyle
+ *  设置 下划线
  */
 @property (nonatomic, copy, readonly) UITableView *(^table_separatorStyle)(UITableViewCellSeparatorStyle style);
 /**

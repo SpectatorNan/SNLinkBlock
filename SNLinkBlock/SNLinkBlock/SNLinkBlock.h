@@ -20,6 +20,8 @@
 #import "UITableView+Link.h"
 #import "UITextField+Link.h"
 #import "UITextView+Link.h"
+#import "NSString+Link.h"
+#import "NSDictionary+Link.h"
 
 
 

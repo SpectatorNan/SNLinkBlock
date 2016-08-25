@@ -29,4 +29,8 @@
  *  设置 estimatedRowHeight
  */
 @property (nonatomic, copy, readonly) UITableView *(^table_estimatedRowHeight)(CGFloat estimatedRowHeight);
+/**
+ *  注册cell
+ */
+@property (nonatomic, copy, readonly) UITableView *(^table_registerClass)(Class cellCls, NSString *cellIdentifier);
 @end

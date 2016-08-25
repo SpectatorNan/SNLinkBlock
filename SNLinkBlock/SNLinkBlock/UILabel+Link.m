@@ -194,4 +194,35 @@
         return self;
     };
 }
+
+- (UILabel *(^)(NSString *, NSString *, UIColor *, NSString *, UIColor *))lab_symbolSplitBeforeAndAfterTheTextColor {
+    
+    return ^(NSString *symbol,NSString *beforeText,UIColor *beforeColor, NSString *afterText, UIColor *afterColor) {
+        
+        /*
+         
+        NSString *aString = [NSString stringWithFormat:@"%@ %@ %@",beforeText,symbol,afterText];
+        NSMutableAttributedString *aAttributedString = [[NSMutableAttributedString alloc] initWithString:aString];
+        NSRange priceRange = [aString rangeOfString:symbol];
+        [aAttributedString addAttribute:NSForegroundColorAttributeName value:beforeColor range:NSMakeRange(0, priceRange.location)];
+        [aAttributedString addAttribute:NSForegroundColorAttributeName value:afterColor range:NSMakeRange(priceRange.location, aAttributedString.length-1)];
+        
+        */
+        [self theSymbol:symbol beforeText:beforeText andBeforeColor:beforeColor afterText:afterText andAfterColor:afterColor];
+        
+        return self;
+    };
+}
+
+
+- (void)theSymbol:(NSString *)symbol beforeText:(NSString *)beforeText andBeforeColor:(UIColor *)beforeColor afterText:(NSString *)afterText andAfterColor:(UIColor *)afterColor {
+    
+    NSString *aString = [NSString stringWithFormat:@"%@ %@ %@",beforeText,symbol,afterText];
+    NSMutableAttributedString *aAttributedString = [[NSMutableAttributedString alloc] initWithString:aString];
+    NSRange priceRange = [aString rangeOfString:symbol];
+    [aAttributedString addAttribute:NSForegroundColorAttributeName value:beforeColor range:NSMakeRange(0, priceRange.location-1)];
+    [aAttributedString addAttribute:NSForegroundColorAttributeName value:afterColor range:NSMakeRange(priceRange.location, aString.length-priceRange.location)];
+    
+    self.attributedText = aAttributedString;
+}
 @end

@@ -66,4 +66,8 @@
 @property (nonatomic, copy, readonly) UILabel *(^lab_minimumFontSize)(CGFloat minimumFontSize)NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED;
 
 @property (nonatomic, copy, readonly) UILabel *(^lab_adjustsLetterSpacingToFitWidth)(BOOL adjustsLetterSpacingToFitWidth) NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+
+
+@property (nonatomic, copy, readonly) UILabel *(^lab_symbolSplitBeforeAndAfterTheTextColor)(NSString *symbol,NSString *beforeText,UIColor *beforeColor, NSString *afterText, UIColor *afterColor);
+
 @end

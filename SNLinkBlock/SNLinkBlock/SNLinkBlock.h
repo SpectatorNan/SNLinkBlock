@@ -22,7 +22,7 @@
 #import "UITextView+Link.h"
 #import "NSString+Link.h"
 #import "NSDictionary+Link.h"
-
+#import "NSMutableArray+Link.h"
 
 
 #endif /* SNLinkBlock_h */

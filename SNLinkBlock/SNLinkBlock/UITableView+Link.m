@@ -58,4 +58,15 @@
     };
 }
 
+- (UITableView *(^)(__unsafe_unretained Class, NSString *))table_registerClass {
+    
+    return ^(Class cls, NSString *cellIdentifier) {
+        [self registerClass:cls forCellReuseIdentifier:cellIdentifier];
+        
+        return self;
+    };
+}
+
+
+
 @end

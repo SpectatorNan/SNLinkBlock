@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Link)
-
++ (NSString*)dictionaryToJson:(NSDictionary *)dic;
 @end
